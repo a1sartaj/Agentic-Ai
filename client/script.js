@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:3000/chat";
+// const API_URL = "http://localhost:3000/chat";
+const API_URL = "https://agentic-ai-2phr.onrender.com/chat";
 
 async function sendMessage() {
   const input = document.getElementById("messageInput");
@@ -68,7 +69,7 @@ function startListening() {
   stopSpeaking();
   const recognition = new SpeechRecognition();
   recognition.continuous = false;
-  
+
   recognition.lang = "en-IN";
   recognition.interimResults = false;
   recognition.maxAlternatives = 1;
