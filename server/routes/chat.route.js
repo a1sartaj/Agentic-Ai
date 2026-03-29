@@ -1,5 +1,5 @@
 import express from 'express'
-import { generateResponse, systemMessage } from '../services/openaiservice.js';
+import { generateResponse, systemMessage } from '../services/openaiService.js';
 import { addMessage, getMessages } from '../memory/sessionMemory.js';
 import { getWeather } from '../tools/weatherTool.js';
 import OpenAI from 'openai';
